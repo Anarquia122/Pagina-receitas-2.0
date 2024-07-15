@@ -1,0 +1,92 @@
+.nave-filtro {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    color: #fff;
+    gap: 0.1rem;
+    text-align: center;
+    font-family: 'Oswald';
+}
+
+.nave-filtro input {
+    display: none;
+}
+
+.nave-filtro label {
+    background-color: #8e0532;
+    border-radius: 10px;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    width: 30%;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.nave-filtro label:hover {
+    background-color: #da2b65;
+}
+
+.nave-filtro input:checked + label {
+    background-color: #ff0054;
+}
+
+/* menu */
+
+.container-item-receitas {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    width: 31rem;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    font-family: 'Maname';
+}
+
+.container-item-receitas h1 {
+    font-family: 'Playwrite Cu';
+}
+
+.container-item-receitas .imagem-prato {
+    max-width: 200px;
+    height: 11rem;
+    /* border-radius: 0 10px 10px 0; */
+    transition: all 0.4s ease-in-out;
+}
+
+.caixa-imagem {
+    height: 11rem;
+    max-width: 180px;
+    overflow: hidden;
+    border: solid 2px black;
+    border-radius: 0 10px 10px 0;
+}
+
+.container-item-receitas div {
+    line-height: 2.0;
+}
+
+.container-item-receitas .confira {
+    background-color: #ff0054;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: none;
+    max-width: 90%;
+}
+
+.container-item-receitas:hover .imagem-prato {
+    transform: scale(1.2);
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 2rem;
+}

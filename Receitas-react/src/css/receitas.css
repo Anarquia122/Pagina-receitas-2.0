@@ -1,0 +1,109 @@
+.container-receitas {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bloco-receitas {
+    margin: auto;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 10;
+}
+
+.bloco-receitas.mostrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+}
+
+.bloco-receitas .fechar {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.bloco-receitas .fechar .btn-fechar {
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.bloco-receitas .conteudo {
+    max-height: 500px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bloco-receitas img {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.bloco-receitas .texto {
+    padding: 10px;
+    line-height: 1.5;
+    font-family: 'Maname';
+}
+
+.bloco-receitas .texto h1 {
+    font-size: 30px;
+    font-family: 'Playwrite Cu';
+}
+
+.bloco-receitas .texto ul {
+    margin: 10px 0;
+    margin-left: 10%;
+}
+
+.bloco-receitas .texto p {
+    max-width: 80%;
+    margin: 10px auto;
+}
+
+/* desfocar a página quando uma receita estiver aparecendo */
+
+.page-content.body-blur {
+    filter: blur(5px);
+    pointer-events: none;
+    user-select: none;
+    z-index: 5;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    display: none;
+}
+
+.overlay.mostrar {
+    display: block;
+}

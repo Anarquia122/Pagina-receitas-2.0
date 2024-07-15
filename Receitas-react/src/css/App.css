@@ -1,0 +1,156 @@
+/* navegação */
+.navegation {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  height: 80px;
+  width: 100vw;
+  padding: 10px 50px;
+  display: flex;
+  background-color: #000;
+  justify-content: space-between;
+}
+.navegation a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-receitas {
+  max-width: 50px;
+}
+
+.nome-pagina {
+  font-size: 20px;
+  font-family: 'Playwrite Cu';
+}
+
+.navegation-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  width: 15%;
+  font-family: 'Oswald';
+}
+
+.navegation-links a {
+  text-decoration: underline;
+}
+/* navegação */
+
+/* slider */
+section.slider {
+  margin: auto;
+  /* margin-top: calc(230px + 80px); */
+  width: 100%;
+  height: calc(100vh - 80px);
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+}
+
+.carrossel {
+  width: 100vw;
+  height: auto;
+  margin-top: 230px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.imagens {
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  /* width: 700px; */
+  width: 80vw;
+  height: 400px;
+  margin-top: -200px;
+}
+
+.imagem-carrossel {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.imagem-carrossel.selecionada {
+  opacity: 1;
+}
+
+.btn-seta {
+  z-index: 0;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 90px;
+  width: 90px;
+  border-radius: 50px;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-seta.btn-voltar {
+  transform: rotate(180deg);
+}
+
+.btn-seta:hover {
+  background-color: #fff;
+}
+
+.imagens:hover .btn-seta {
+  opacity: 1;
+  z-index: 1;
+}
+
+.carrossel input {
+  display: none;
+}
+
+.nav-manual, .nav-auto {
+  position: absolute;
+  width: 100%;
+  margin-top: 17%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div {
+  border: 1px solid #ff0054;
+  border-radius: 50px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
+  margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover {
+  background-color: #fa317481;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1 {
+  background-color: #ff0054;
+}
+#radio2:checked ~ .nav-auto .auto-btn2 {
+  background-color: #ff0054;
+}
+/* slider */

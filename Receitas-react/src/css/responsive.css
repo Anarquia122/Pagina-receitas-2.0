@@ -1,0 +1,65 @@
+@media (max-width: 769px) {
+    .btn-seta {
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .nav-manual, .nav-auto {
+        margin-top: 33%;
+    }
+
+    .menu {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 435px) {
+
+    .navegation {
+        padding: 10px;
+        justify-content: space-around;
+    }
+
+    .logo-receitas {
+        max-width: 35px;
+    }
+
+    .nome-pagina {
+        font-size: 16px;
+    }
+
+    .navegation-links {
+        width: auto;
+    }
+
+    section.slider {
+        height: calc(55vh + 80px);
+        margin-top: 80px;
+    }
+
+    .carrossel {
+        margin-top: 50px;
+    }
+
+    .imagens {
+        width: 100vw;
+        height: 300px;
+    }
+
+    .menu {
+        padding: 0.5rem;
+    }
+
+    .imagem-prato {
+        min-height: 100%;
+    }
+
+    .caixa-imagem {
+        height: 100%;
+    }
+
+    .bloco-receitas {
+        width: 100%;
+        /* top: 25%; */
+    }
+}
