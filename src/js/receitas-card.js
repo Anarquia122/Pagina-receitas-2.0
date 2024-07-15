@@ -18,7 +18,7 @@ const bolinhoArrozCartaz = {
     nome: "Bolinho de Arroz",
     imagem: bolinhoArrozImg,
     comentario: "Uma ótima opção de lanche.",
-    autor: "Autor: Italo"
+    autor: "Autor: Eurides"
 };
 
 const pamonhaFritaCartaz = {
